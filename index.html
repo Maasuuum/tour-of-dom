@@ -9,6 +9,12 @@
         li{
             color: tomato;
         }
+        #fruits-title{
+            color: black;
+        }
+        .important-places{
+            color: rgb(16, 84, 72);
+        }
     </style>
 </head>
 <body>
@@ -16,16 +22,45 @@
         <h1>Let's Discuss about DOM</h1>
     </header>
     <main>
-        <h1>What we need to learn about DOM:</h1>
+       <section>
+        <h1 id="dom-type">What we need to learn about DOM:</h1>
         <ul>
             <li>Jalali Set</li>
             <li>Shafayet</li>
             <li>Bonobash</li>
+            <li>DOM de re Baba</li>
         </ul>
+       </section>
+       <section>
+        <h1 id="fruits-title">Fruits I like</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Carrot</li>
+        </ul>
+       </section>
+       <section>
+        <h1 id="place-title">Places I like to visit</h1>
+        <ul>
+            <li class="important-places">Shundarban</li>
+            <li class="important-places">Bandarban</li>
+            <li class="important-places">Shalban</li>
+            <li>Mohaban</li>
+        </ul>
+       </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
-        console.log('Adding JS inside the html file');
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            // console.log(li.innerText);
+        }
+        const places = document.getElementsByClassName('important-places');
+        // console.log(places);
+        for(const place of places){
+            console.log(place.innerText);
+        }
     </script>
 </body>
 </html>
