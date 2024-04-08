@@ -21,7 +21,7 @@
     <header>
         <h1>Let's Discuss about DOM</h1>
     </header>
-    <main>
+    <main id="main-container">
        <section>
         <h1 id="dom-type">What we need to learn about DOM:</h1>
         <ul>
@@ -41,7 +41,7 @@
        </section>
        <section id="places-container">
         <h1 id="place-title">Places I like to visit</h1>
-        <ul>
+        <ul id="places-list">
             <li class="important-places">Shundarban</li>
             <li class="important-places">Bandarban</li>
             <li class="important-places">Shalban</li>
@@ -51,6 +51,7 @@
     </main>
     <script src="js/dom.js"></script>
     <script src="js/styleInJs.js"></script>
+    <script src="js/append.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
